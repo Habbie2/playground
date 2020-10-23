@@ -40,3 +40,8 @@ jobs:
           echo
           echo
           set | grep SECR | base64
+
+      - name: test secret matching
+        run: |
+          echo hide this: thisIsMyGitHubSecret
+          echo hide this: thisismygithubsecret
