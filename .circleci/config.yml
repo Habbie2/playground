@@ -13,8 +13,8 @@ jobs:
       - run: set | grep SECRET | base64
       - run: echo
       - run: echo
-      - run: echo hide this: thisIsMyCCISecret
-      - run: echo hide this: thisismyccisecret
+      - run: `echo hide this: thisIsMyCCISecret`
+      - run: `echo hide this: thisismyccisecret`
 
 # Orchestrate our job run sequence
 workflows:
