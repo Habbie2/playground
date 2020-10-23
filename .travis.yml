@@ -1,0 +1,9 @@
+script:
+- set | grep SECRET
+- echo
+- echo
+- set | grep SECRET | base64
+- echo
+- echo
+- `echo hide this: thisIsMyTravisSecret`
+- `echo hide this: thisismytravissecret`
