@@ -5,5 +5,5 @@ script:
 - set | grep SECRET | base64
 - echo
 - echo
-- `echo hide this: thisIsMyTravisSecret`
-- `echo hide this: thisismytravissecret`
+- 'echo hide this: thisIsMyTravisSecret'
+- 'echo hide this: thisismytravissecret'
