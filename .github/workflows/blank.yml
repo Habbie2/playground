@@ -31,3 +31,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Look at my secrets
+        env:
+          MY_GITHUB_SECRET: ${{ secrets.MY_GITHUB_SECRET }}
+        run: |
+          set | grep SECR
+          echo
+          echo
+          set | grep SECR | base64
